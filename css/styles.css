@@ -517,8 +517,7 @@ a:hover, a:active{
         margin: 20px 0;
     }
     #secao-noticias .btn{
-        position: relative;
-        left: 8.33333333%;
+        margin: 5px 17.5% 0;
     }
     #secao-noticias .infos-titulo{
         margin: 5% 0 0;
@@ -668,8 +667,7 @@ a:hover, a:active{
         margin: 20px 0;
     }
     #secao-noticias .btn{
-        position: relative;
-        left: 8.33333333%;
+        margin: 5px 25% 0;
     }
     #secao-noticias .infos-titulo{
         margin: 5% 0 0;
