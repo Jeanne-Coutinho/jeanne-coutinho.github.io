@@ -1,0 +1,1171 @@
+/*---------------------------------------------
+Proposta: Redesign do site http://rockinrio.com/rio/pt-BR
+
+Desenvolvido por: Jeanne Lima
+Behance: https://www.behance.net/jeannelimac442
+Linkedin: https://br.linkedin.com/in/jeannecslima
+---------------------------------------------*/
+
+/*Anotações -----------------------------------
+
+---------------------------------------------*/
+
+
+/* Informações Gerais
+---------------------------------------------*/
+html, body{
+    width: 100%;
+}
+html, body, .container , .row{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    
+}
+body{
+    overflow-x: hidden;
+    color: #fff;
+}
+li{
+    list-style-type: none;
+}
+a{
+    color: #fff;
+}
+#secao-noticias .col-xs-offset-1 {
+    margin: 0 8.33333333%;
+}
+/* Seção Navbar
+---------------------------------------------*/
+.navbar{
+    background: #000;
+}
+.navbar-brand{
+    position: fixed;
+    left: 43%;
+    bottom: 15%;
+}
+.navbar-nav li a{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.navbar .dropdown-menu{
+    background-color:rgba(0,0,0,0.5);
+}
+.navbar .dropdown-menu li a{
+    color: #fff;
+    padding:0;
+    font-weight: 600;
+}
+
+/* Seção Header Apresentação
+---------------------------------------------*/
+/* Carousel */
+.carousel-inner .item img{
+    width: 100vw;
+    height: 100vh;
+}
+.carousel-control{
+    position: absolute;
+    top: 45%;
+}
+.titulo-carousel{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.carousel-caption{
+    position: absolute;
+    top: 40%;
+}
+/* Botao Carousel Apresentacao */
+.saiba-mais-1 button{
+    display: block;
+    border: 3px solid #7DCD23;
+    border-radius: 0%;
+    background: transparent;
+    color: #fff;  
+    font-weight: 600;
+}
+.saiba-mais-1 .btn-extra-area{
+    background: #7DCD23;
+}
+.btn-extra-area .glyphicon{
+    color: #000;
+}
+/* Datas Apresentacao Home */
+#datas{
+    z-index:2;
+}
+#nome{
+    border-bottom: 3px solid #fff;
+}
+#infos-datas{
+    position: absolute;
+    top: 0;
+    left: 110%;
+    text-align: left;
+    padding: 0;
+    width: 100px;
+}
+/* Opções Apresentação Home*/
+.btn-group, .linguagem button, .lugar button, .dropdown-menu{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+}
+.btn-group .glyphicon{
+    margin:  0 0 0 5px;
+}
+.linguagem button{
+    border: none; 
+    border-left: 3px solid #fff;
+    margin: 20px 0 0;
+}
+.linguagem{
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    z-index:2;
+}
+.bandeira-linguagem{
+    width: 24px;
+    margin: 0 5px 0 0;
+}
+.lugar .dropdown-menu, .linguagem .dropdown-menu{
+    background-color:rgba(0,0,0,0.5);
+}
+.lugar .dropdown-menu li a, .linguagem .dropdown-menu li a{
+    color: #fff;
+    margin: 10px 15px;
+    padding:0;
+    font-size: 12px;
+    font-weight: 600;
+}
+.lugar button{
+    border: none; 
+    margin: 20px 0 0;
+}
+.lugar{
+    position: absolute;
+    top: 5px;
+    left: -75px;
+    z-index:2;
+}
+
+/* Seção Hotéis Oficiais
+---------------------------------------------*/
+#secao-hoteis{
+    background-image: url('../img/bg-hoteis.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+    color: #fff;
+    overflow: hidden;
+}
+.infos-titulo{
+    margin: 0 0 25px 0;
+}
+.titulo-secoes{
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+.divisor-linha{
+    display:block;
+    border-bottom: 3px solid #E4446F;
+    width: 15%;
+    padding: 0;
+    margin: 20px 0;  
+}
+.explicacao-secoes{
+    font-size: 21px;
+}
+.btn{
+    text-transform: uppercase;
+    font-size: 18px;
+    display: block;
+    border: 3px solid #fff;
+    border-radius: 0%;
+    background: transparent;
+    color: #fff;
+    margin: 25px 0;
+}
+/* Seção Artista Convidado
+---------------------------------------------*/
+.convidado-img{
+    background-image: url('../img/justin-timberlake.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 50vh;
+}
+#secao-convidado{
+    background: #000;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+#secao-convidado .infos-titulo{
+    text-align: center;
+}
+.subtitulo-secoes{
+    display: block;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 5px;
+}
+#secao-convidado .divisor-linha{
+    position: relative;
+    left:42.5%;
+    border-bottom: 3px solid #E46230;
+}
+#secao-convidado button{
+    position: relative;
+    left:22.5%;
+}
+.infos-convidado{
+    color: #fff;
+}
+/* Seção Produtos Oficiais
+---------------------------------------------*/
+#secao-produtos{
+    background-image: url('../img/bg-produtos-oficias.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    overflow: hidden;
+    color: #fff;
+}
+.infos-produtos{
+    margin: 50px 0;
+    padding: 0;
+}
+#img-produtos{
+    margin: 25px 0 25px;
+}
+.produto, .produto-2{
+    display: inline-block;
+    margin: 5px 5px; 
+}
+#secao-produtos .divisor-linha{
+    position: relative;
+    left:42.5%;
+    border-bottom: 3px solid #3EB6DD;
+}
+#secao-produtos button{
+    position: relative;
+    left:43.5%;
+}
+
+/* Seção Notícias
+---------------------------------------------*/
+#secao-noticias{
+    background-image: url('../img/bg-noticias.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    overflow: hidden;
+}
+#secao-noticias .divisor-linha{
+    border-bottom: 3px solid #B6E302;
+}
+.img-noticia, .descricao-noticias{
+    display: inline-block;
+}
+.subtitulo-noticias{
+    display: block;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 5px;
+}
+.titulo-noticias{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.bloco-noticia, #secao-noticias .infos-titulo{
+    padding: 0;
+}
+.bloco-noticia a{
+    filter: grayscale(100%)
+
+}
+.descricao-noticias{
+    margin-top: 15px;
+}
+/* Seção Dados
+---------------------------------------------*/
+#secao-dados{
+    background-image: url('../img/bg-dados.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+.bloco-dado-1,.bloco-dado-2,.bloco-dado-3,.bloco-dado-4{
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+.numero-dado{
+    display: block;
+    font-size: 60px;
+}
+.titulo-dado{
+    display: block;
+    font-size: 36px;
+}
+.subtitulo-dado{
+    display: block;
+    font-size: 18px;
+    font-weight: 300;
+}
+#secao-dados button{
+    position: relative;
+    left:38%;
+}
+.bloco-dado-1{
+    color: #1DA812;
+}
+.bloco-dado-2{
+    color: #27CCBC;
+}
+.bloco-dado-3{
+    color: #B554F2;
+}
+.bloco-dado-4{
+    color: #E33B3B;
+}
+
+/* Efeitos
+---------------------------------------------*/
+a:hover, a:active{
+    color:#fff;
+}
+#opcoes .btn:hover, #opcoes .dropdown-menu a:hover, .navbar .dropdown-menu a:hover{
+    background-color: transparent;
+    color: #fff;
+}
+.bloco-noticia a:hover{
+    filter: grayscale(0%)
+}
+.navbar-toggle: active, .navbar-toggle: hover{
+    background: #000;
+}
+
+/* Media Queries
+---------------------------------------------*/
+@media only screen and (max-width: 768px) {
+    /* Carousel Apresentacao */
+    .titulo-carousel{
+        font-size: 24px;
+    }
+    /* Botao Carousel Apresentacao */
+    .saiba-mais-1{
+        margin: 0 15px 0;
+    }
+    .infos-hoteis{
+        margin: 25% 12.5% 0;
+        padding: 0;
+    }
+    .infos-titulo{
+        text-align: center;
+        margin: 0 0 50px 0;
+    }
+    #secao-hoteis .btn{
+        margin: 25px 15% 0; 
+    }
+    #secao-hoteis .divisor-linha{
+        margin: 15px 40%;   
+    }
+    /* Seção Artista Convidado*/
+    .convidado-img{
+        background-image: url('../img/justin-timberlake_mobile.png');
+        width: 100vw;
+        height: 60vh;
+    }
+    #secao-convidado{
+        height: 150vh;
+    }
+    .subtitulo-secoes{
+        font-size: 14px;
+    }
+    .infos-convidado{
+        margin: 25% 10% 0;
+    }
+    #secao-convidado .btn{
+        margin: 25px -25% 0; 
+    }
+    /* Seção Produtos Oficiais*/
+    #img-produtos{
+        margin: 50px 0;
+        position: relative;
+        left: 10%;
+    }
+    #secao-produtos .infos-titulo{
+        position: relative;
+        left: 12.5%;
+    }
+    #secao-produtos .btn{
+        position: relative;
+        left: 32.5%;
+    }
+    /* Secao Dados */
+    #secao-dados{
+        width: 100%;
+        height: 185vh;
+    }
+    .bloco-dado-1,.bloco-dado-2,.bloco-dado-3,.bloco-dado-4{
+        margin: 0 0 40px;
+    }
+    .coluna-dado{
+        margin: 5% 12.5% 0;
+    }
+    #secao-dados .btn{
+        margin: 5px -20% 0; 
+    }
+    /* Seção Navbar*/
+    .nav-parte-1{
+        float:left;
+        margin-left: 2px;
+    }
+    .nav-parte-2{
+        float: right;
+        margin-right: 2px;
+    }
+    .navbar{
+        position: fixed;
+        top:0;
+        background: transparent;
+        height: 0;
+    }
+    .navbar-toggle{
+        background: #000;
+    }
+    .navbar-brand{
+        display: none;
+    }
+    .navbar-brand img{
+        width: 100px;
+    }
+    .navbar-nav li a{
+        font-size: 10px;
+        float: right;
+    }
+    .navbar-inverse .navbar-nav>li>a{
+        padding: 0;
+    }
+    .navbar-collapse{
+        background-color:rgba(0,0,0,0.95);
+    }
+    .navbar .dropdown-menu{
+        background-color:rgba(0,0,0,1.0);
+    }
+    /* Opcoes Apresentacao Home */
+    #opcoes{
+        position: absolute;
+        left: 90px;
+    }
+    #datas{
+        position: absolute;
+        top: 100px;
+        left: 30px;
+        z-index: 1;
+    }
+    .lugar .btn{
+        padding-left 0;
+    }
+    /* Menu Toggle */
+    .navbar-toggle{
+        position: absolute;
+        top: 20px;
+        right: -20px;
+    }
+    .navbar-collapse{
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 90vw;
+    }
+    .navbar-fixed-bottom, .navbar-fixed-top {
+        z-index: 2;
+    }
+    /* Seção Notícias*/
+    #secao-noticias{
+        height: 175vh;
+        padding-top: 10%;
+    }
+    #secao-noticias .infos-titulo{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #secao-noticias .divisor-linha{
+        width: 25%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #noticias-inferior{
+        position: relative;
+        right: 0%;
+    }
+    .bloco-noticia{
+        margin: 20px 0;
+    }
+    #secao-noticias .btn{
+        position: relative;
+        left: 8.33333333%;
+    }
+    #secao-noticias .infos-titulo{
+        margin: 5% 0 0;
+    }
+    #secao-noticias img{
+        width: 125px;
+    }
+    .subtitulo-noticias{
+        font-size: 9px;
+    }
+    .titulo-noticias{
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 768px) and (orientation: landscape){
+   /* Carousel Apresentacao */
+    .titulo-carousel{
+        font-size: 35px;
+    } 
+   /* Botao Carousel Apresentacao */
+    .saiba-mais-1{
+        margin: -15px 15px 0;
+    }
+    /* Secao Hoteis */
+    #secao-hoteis{
+        height: 150vh;
+    } 
+     #secao-hoteis .btn{
+        margin: 25px 32.5% 0; 
+    }
+    /* Seção Artista Convidado*/
+    .convidado-img{
+        background-image: url('../img/justin-timberlake_mobile.png');
+        width: 100vw;
+        height: 150vh;
+    }
+    #secao-convidado{
+        height: 275vh;
+    }
+    .infos-convidado{
+        margin: 10% 10% 0;
+    }
+    #secao-convidado .btn{
+        margin: 25px -5% 0; 
+    }
+    .produto-2, .produto{
+        margin: 0 1px 0;
+        width: 125px;
+    }
+    #img-produtos{
+        position: relative;
+        left: 12.5%;
+    }
+    #secao-produtos .btn{
+        position: relative;
+        left: 45%;
+    }
+    /* Secao Dados */
+    #secao-dados{
+        width: 100%;
+        height: 300vh;
+    }
+    .bloco-dado-1,.bloco-dado-2,.bloco-dado-3,.bloco-dado-4{
+        margin: 0 0 40px;
+    }
+    .coluna-dado{
+        margin: 5% 12.5% 0;
+    }
+    #secao-dados .btn{
+        margin: 5px 0 0; 
+    }
+    /* Seção Navbar*/
+    .nav-parte-1{
+        float:left;
+        margin-left: 2px;
+    }
+    .nav-parte-2{
+        float: right;
+        margin-right: 2px;
+    }
+    /* Opcoes Apresentacao Home */
+    #opcoes{
+        position: absolute;
+        left: 90px;
+    }
+    #datas{
+        position: absolute;
+        top: 30px;
+        left: 45%;
+        z-index: 1;
+    }
+    .lugar .btn{
+        padding-left 0;
+    }
+    /* Menu Toggle */
+    .navbar-toggle{
+        position: absolute;
+        top: 20px;
+        right: -40px;
+    }
+    .navbar-collapse{
+        position: absolute;
+        top: 60px;
+        right: -10px;
+        width: 90vw;
+    }
+    .navbar-fixed-bottom, .navbar-fixed-top {
+        z-index: 2;
+    }
+    /* Seção Notícias*/
+    #secao-noticias{
+        height: 250vh;
+    }
+    #secao-noticias .infos-titulo{
+        float: right;
+    }
+    #secao-noticias .divisor-linha{
+        float: right;
+        width: 45%;
+    }
+    #noticias-inferior{
+        position: relative;
+        right: 0%;
+    }
+    .bloco-noticia{
+        margin: 20px 0;
+    }
+    #secao-noticias .btn{
+        position: relative;
+        left: 8.33333333%;
+    }
+    #secao-noticias .infos-titulo{
+        margin: 5% 0 0;
+    }
+    /* Seção Notícias*/
+    #secao-noticias .infos-titulo{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #secao-noticias .divisor-linha{
+        width: 25%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .bloco-noticia{
+        margin: 20px 0;
+    }
+    #secao-noticias .btn{
+        position: relative;
+        left: 8.33333333%;
+    }
+    #secao-noticias .infos-titulo{
+        margin: 5% 0 0;
+    }
+    #secao-noticias img{
+        width: 125px;
+        float: left;
+    }
+    .subtitulo-noticias{
+        font-size: 9px;
+    }
+    .titulo-noticias{
+        font-size: 11px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    /* Carousel Apresentacao */
+    .titulo-carousel{
+        font-size: 35px;
+    }
+    /* Botao Carousel Apresentacao */
+    .saiba-mais-1{
+        margin: -25px 25px 0;
+    }
+    /* Secao Hoteis */
+    .infos-hoteis{
+        margin: 25% 35% 0;
+        padding: 0;
+    }
+    .infos-titulo{
+        text-align: left;
+        margin: 0 0 50px 0;
+    }
+    #secao-hoteis .btn{
+        margin: 25px 0 0; 
+    }
+    #secao-hoteis .divisor-linha{
+        margin: 15px 0;   
+    }
+    /* Secao Artista Convidado */
+    .convidado-img{
+        background-image: url('../img/justin-timberlake_mobile.png');
+        width: 100vw;
+        height: 60vh;
+    }
+    #secao-convidado{
+        height: 140vh;
+    }
+    .infos-convidado{
+        margin: 10% 10% 0;
+    }
+    #secao-convidado .btn{
+        margin: 25px 5% 0; 
+    }
+    /* Secao Artista Convidado */
+    .convidado-img{
+        background-image: url('../img/justin-timberlake_mobile.png');
+        width: 100vw;
+        height: 60vh;
+    }
+    #secao-convidado{
+        height: 100vh;
+    }
+    .infos-convidado{
+        margin: 10% 10% 0;
+    }
+    #secao-convidado .btn{
+        margin: 25px 1.5% 0; 
+    }
+    /* Seção Produtos Oficiais*/
+    #secao-produtos{
+        height: 100vh;
+    }
+    #img-produtos{
+        margin: 100px 50px;
+        position: relative;
+        left: 0;
+    }
+    #secao-produtos .infos-titulo{
+        text-align: center;
+    }
+    #secao-produtos .btn{
+        position: relative;
+        left: 38.5%;
+    }
+    /* Secao Dados */
+    #secao-dados{
+        width: 100%;
+        height: 100vh;
+    }
+    .bloco-dado-1,.bloco-dado-2,.bloco-dado-3,.bloco-dado-4{
+        margin: 0 0 25px;
+    }
+    .coluna-dado{
+        margin: 5% 27.5% 0;
+    }
+    #secao-dados .btn{
+        margin: 10px -1.5% 0; 
+    }
+    /* Seção Navbar*/
+    .nav-parte-1{
+        float:left;
+    }
+    .nav-parte-2{
+        float: right;
+    }
+    .navbar-brand{
+        display: none;
+    }
+    .navbar-brand img{
+        width: 100px;
+    }
+    .navbar-nav li a{
+        font-size: 9.5px;
+        margin: 0 5px;
+    }
+    .navbar .dropdown-menu li a{
+        margin: 10px 10px;
+        font-size: 12px;
+    }
+    /* Opcoes Apresentacao Home */
+    #opcoes{
+        position: absolute;
+        left: 15%;
+    }
+    #datas{
+        position: absolute;
+        top: 100px;
+        left: 7.5%;
+    }
+    .lugar .btn{
+        padding-left 0;
+    }
+    /* Seção Notícias*/
+    #secao-noticias{
+        height: 100vh;
+        padding: 15% 0 0;
+    }
+    #secao-noticias .btn{
+        position: relative;
+        left: 50%;
+        top: -50px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) and (orientation: landscape) {
+    /* Carousel Apresentacao */
+    .titulo-carousel{
+        font-size: 35px;
+    }
+    /* Botao Carousel Apresentacao */
+    .saiba-mais-1{
+        margin: -25px 25px 0;
+    }
+    /* Secao Hoteis */
+    .infos-hoteis{
+        margin: 25% 12.5% 0;
+        padding: 0;
+    }
+    .infos-titulo{
+        text-align: center;
+        margin: 0 0 50px 0;
+    }
+    #secao-hoteis .btn{
+        margin: 25px 15% 0; 
+    }
+    #secao-hoteis .divisor-linha{
+        margin: 15px 40%;   
+    }
+    /* Secao Produtos */
+    #secao-produtos .infos-titulo{
+        position: relative;
+        left:  100px;
+        text-align: center;
+    }
+    /* Secao Artista Convidado */
+    .convidado-img{
+        background-image: url('../img/justin-timberlake_mobile.png');
+        width: 100vw;
+        height: 60vh;
+    }
+    #secao-convidado{
+        height: 140vh;
+    }
+    .infos-convidado{
+        margin: 10% 10% 0;
+    }
+    #secao-convidado .btn{
+        margin: 25px 5% 0; 
+    }
+    /* Secao Dados */
+    #secao-dados{
+        width: 100%;
+        height: 100vh;
+    }
+    .bloco-dado-1,.bloco-dado-2,.bloco-dado-3,.bloco-dado-4{
+        margin: 100px 0 100px;
+    }
+    /* Seção Navbar*/
+    .nav-parte-1{
+        float:left;
+    }
+    .nav-parte-2{
+        float: right;
+    }
+    .navbar-brand{
+        position: fixed;
+        left: 43%;
+        bottom: 10%;
+    }
+    .navbar-brand img{
+        width: 100px;
+    }
+    .navbar-nav li a{
+        font-size: 11.5px;
+        margin: 0 12px;
+    }
+    .navbar .dropdown-menu li a{
+        margin: 10px 10px;
+        font-size: 12px;
+    }
+    .navbar-inverse .navbar-nav>li>a{
+        padding: 0;
+    }
+    /* Opcoes Apresentacao Home */
+    #opcoes{
+        position: absolute;
+        left: 82.5%;
+    }
+    #datas{
+        position: absolute;
+        top: 40px;
+        left: 10%;
+    }
+    .lugar .btn{
+        padding-left 0;
+    }
+    /* Seção Notícias*/
+    #secao-noticias{
+        height: 100vh;
+    }
+    #secao-noticias .infos-titulo{
+        float: right;
+    }
+    #secao-noticias .divisor-linha{
+        float: right;
+        width: 45%;
+    }
+    #noticias-inferior{
+        position: relative;
+        right: -25%;
+    }
+    .bloco-noticia{
+        margin: 20px 0;
+    }
+    #secao-noticias .btn{
+        position: relative;
+        left: 8.33333333%;
+    }
+    #secao-noticias .infos-titulo{
+        margin: 5% 0 0;
+    }
+    #secao-noticias img{
+        width: 175px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    /* Carousel Apresentacao */
+    .titulo-carousel{
+        font-size: 50px;
+    }
+    /* Botao Carousel Apresentacao */
+    .saiba-mais-1{
+        margin: -35px 25px 0;
+    }
+    /* Secao Hoteis */
+    .infos-hoteis{
+        position: relative;
+        top: 200px;
+        left: 40%;
+    }
+    /* Secao Artista Convidado */
+    .convidado-img{
+        background-image: url('../img/justin-timberlake.png');
+        width: 60%;
+        height: 100vh;
+    }
+    #secao-convidado .infos-convidado{
+        position: relative;
+        top: 200px;
+        width: 33.3%;
+    }
+    #secao-convidado .btn{
+        margin: 25px -20% 0; 
+    }
+    /* Seção Produtos Oficiais*/
+    #secao-produtos{
+        width: 100%;
+        height: 125vh;
+    }
+    .produto-2{
+        width: 288px;
+    }
+    /* Secao Dados */
+    .bloco-dado-3,.bloco-dado-4{
+        margin: 25px 0 25px;
+    }
+    .bloco-dado-1, .bloco-dado-2 {
+        margin: 0 0 25px;
+    }
+    /* Seção Navbar*/
+    .nav-parte-1{
+        float:left;
+    }
+    .nav-parte-2{
+        float: right;
+    }
+    .navbar-brand{
+        position: fixed;
+        left: 43%;
+        bottom: 12.5%;
+    }
+    .navbar-brand img{
+        width: 100px;
+    }
+    .navbar-nav li a{
+        font-size: 12px;
+        margin: 0 5px;
+    }
+    .navbar .dropdown-menu li a{
+        margin: 10px 10px;
+        font-size: 12px;
+    }
+    /* Opcoes Apresentacao Home */
+    #opcoes{
+        position: absolute;
+        left: 82.5%;
+    }
+    #datas{
+        position: absolute;
+        top: 40px;
+        left: 10%;
+    }
+    /* Seção Notícias*/
+    #secao-noticias{
+        height: 100vh;
+    }
+    #secao-noticias .infos-titulo{
+        float: right;
+    }
+    #secao-noticias .divisor-linha{
+        float: right;
+        width: 45%;
+    }
+    #noticias-inferior{
+        position: relative;
+        right: -25%;
+    }
+    .bloco-noticia{
+        margin: 20px 0;
+    }
+    #secao-noticias .btn{
+        position: relative;
+        left: 8.33333333%;
+    }
+    #secao-noticias .infos-titulo{
+        margin: 5% 0 0;
+    }
+    #secao-noticias img{
+        width: 175px;
+    }
+}
+
+
+@media only screen and (min-width: 1200px) {
+    /* Carousel Apresentacao */
+    .titulo-carousel{
+        font-size: 60px;
+    }
+    /* Botao Carousel Apresentacao */
+    .saiba-mais-1{
+        margin: -35px 25px 0;
+    }
+    /* Secao Hoteis */
+    .infos-hoteis{
+        position: relative;
+        top: 150px;
+        left: 40%;
+    }
+    /* Secao Artista Convidado */
+    #secao-convidado{
+        overflow: hidden;
+    }
+    .convidado-img{
+        background-image: url('../img/justin-timberlake.png');
+        width: 50%;
+        height: 100vh;
+    }
+    .subtitulo-secoes{
+        font-size: 14px;
+    }
+    .infos-convidado{
+        margin: 150px 0;
+    }
+    #secao-convidado .infos-convidado{
+        position: relative;
+        top: 0;
+        right: -5%;
+        width: 33.3%;
+    }
+    #secao-convidado .btn{
+        margin: 25px -22.5% 0; 
+    }
+    /* Seção Produtos Oficiais*/
+    #secao-produtos{
+        width: 100%;
+        height: 100vh;
+    }
+    .produto-2{
+        width: 288px;
+    }
+    /* Secao Dados */
+    #secao-dados{
+        width: 100%;
+        height: 100vh;
+    }
+    .bloco-dado-1,.bloco-dado-2,.bloco-dado-3,.bloco-dado-4{
+        margin: 50px 0 25px;
+    }
+    #secao-dados .btn{
+        margin: 25% 1.5% 0; 
+    }
+    .bloco-dado-1, .bloco-dado-2 {
+        margin: 0 0 25px;
+    }
+    /* Seção Navbar*/
+    .nav-parte-1{
+        float:left;
+    }
+    .nav-parte-2{
+        float: right;
+    }
+    .navbar-brand{
+        position: fixed;
+        left: 43.5%;
+        bottom: 12.5%;
+    }
+    .navbar-brand img{
+        width: 110px;
+    }
+    .navbar-nav li a{
+        font-size: 14px;
+        margin: 0 10px;
+    }
+    .navbar .dropdown-menu li a{
+        margin: 10px 15px;
+        font-size: 12px;
+    }
+    /* Opcoes Apresentacao Home */
+    #opcoes{
+        position: absolute;
+        left: 82.5%;
+    }
+    #datas{
+        position: absolute;
+        top: 40px;
+        left: 10%;
+    }
+    .lugar .btn{
+        padding-left 0;
+    }
+    /* Seção Notícias*/
+    #secao-noticias{
+        height: 135vh;
+    }
+    #secao-noticias .infos-titulo{
+        float: right;
+    }
+    #secao-noticias .divisor-linha{
+        float: right;
+        width: 45%;
+    }
+    #noticias-inferior{
+        position: relative;
+        right: -25%;
+    }
+    .bloco-noticia{
+        margin: 20px 0;
+    }
+    #secao-noticias .btn{
+        position: relative;
+        left: 8.33333333%;
+    }
+    #secao-noticias .infos-titulo{
+        margin: 5% 0 0;
+    }
+}
